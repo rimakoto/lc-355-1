@@ -39,11 +39,11 @@ export default function Favorites() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {favorites.map((quote) => (
-              <div key={quote.id} className="relative group">
+              <div key={quote.id} className="relative">
                 <QuoteCard quote={quote} theme={theme} showDate={false} size="small" />
                 <button
                   onClick={() => removeFavorite(quote.id)}
-                  className="absolute top-3 right-3 p-2 rounded-full bg-white/80 opacity-0 group-hover:opacity-100 text-stone-500 hover:text-rose-500 hover:bg-white transition-all duration-200 shadow-sm"
+                  className="absolute top-2 right-2 z-30 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md opacity-60 hover:opacity-100 hover:bg-white hover:text-rose-500 text-stone-500 transition-all duration-200 hover:scale-110"
                   title="删除收藏"
                 >
                   <Trash2 size={18} />

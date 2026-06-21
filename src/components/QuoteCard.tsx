@@ -53,7 +53,7 @@ export default function QuoteCard({ quote, theme, showDate = true, size = 'norma
           「
         </span>
         <p
-          className={`${theme.cardText} leading-loose font-medium relative z-10 ${
+          className={`${theme.cardText} leading-loose font-medium relative ${
             isSmall ? 'text-base' : 'text-xl md:text-2xl'
           }`}
         >
